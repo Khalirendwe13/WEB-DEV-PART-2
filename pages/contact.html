@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Contact Us - SOCCER Agency</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- HEADER SECTION -->
+    <header>
+        <!-- Checkbox hack for mobile navigation toggle -->
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        
+        <!-- Navigation bar -->
+        <nav>
+            <label for="nav-toggle" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <!-- Navigation Links -->
+            <a href="../index.html">Home</a>
+            <a href="../pages/contact.html">Contact us</a>
+            <a href="../pages/about.html">About us</a>
+            <a href="../pages/products.html">Products</a>
+            <a href="../pages/enquire.html">Enquire</a>
+        </nav>
+    </header>
+    
+    <!-- MAIN CONTENT -->
+    <main>
+        <h1>Contact Us</h1>
+        <!-- Contact details -->
+        <p>Address: 78 82nd Avenue, Seshego, Polokwane</p>
+        <p>Phone: <a href="tel:+27764601177">+27 76 460 1177</a></p>
+        <p>Email: <a href="mailto:khalimoses@icloud.com">khalimoses@icloud.com</a></p>
+        
+        <!-- Google Maps embed -->
+          <div class="map-container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509123!2d24.123456!3d-23.456789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e2e1234567890ab%3A0x1234567890abcdef!2s78%2082nd%20Avenue%2C%20Seshego%2C%20Polokwane!5e0!3m2!1sen!2sza!4v1612345678901!5m2!1sen!2sza"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"></iframe>
+        </div>
+        
+        <!-- Contact form -->
+        <form action="submit_form.php" method="post">
+            <!-- Input for name -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <!-- Input for email -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <!-- Input for message -->
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <!-- Submit button -->
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+    
+    <!-- FOOTER SECTION -->
+    <footer>
+        <!-- Footer navigation -->
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="contact.html">Contact us</a>
+            <a href="about.html">About us</a>
+            <a href="products.html">Products</a>
+            <a href="enquire.html">Enquire</a>
+        </nav>
+        
+        <!-- Repeated contact details -->
+        <div class="contact-details">
+            <p>Address: 78 82nd Avenue, Seshego, Polokwane</p>
+            <p>Phone: <a href="tel:+27764601177">+27 76 460 1177</a></p>
+            <p>Email: <a href="mailto:khalimoses@icloud.com">khalimoses@icloud.com</a></p>
+        </div>
+        
+        <!-- Social media links with icons -->
+        <div class="social-media">
+            <p>Follow us on</p>
+            <a href="https://www.facebook.com"><i class="fab fa-facebook"></i> Facebook</a>
+            <a href="https://wa.me/+27764601177"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+            <a href="https://www.tiktok.com"><i class="fab fa-tiktok"></i> TikTok</a>
+        </div>
+        
+        <!-- Footer copyright -->
+        <p>&copy; 2025 ndou Matamela Agency. All rights reserved.</p>
+    </footer>
+</body>
+</html>
