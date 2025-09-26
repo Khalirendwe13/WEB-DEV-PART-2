@@ -1,8 +1,10 @@
-/* General Styles */
+/* ===============================
+   GENERAL STYLES
+   =============================== */
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; /* Ensures consistent sizing for elements */
 }
 
 body {
@@ -10,13 +12,13 @@ body {
     line-height: 1.6;
     color: #333;
     background-color: #f4f4f4;
-    background-image: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
+    background-image: linear-gradient(135deg, #4CAF50 0%, #45a049 100%); /* Gradient background */
     min-height: 100vh;
 }
 
 h1, h2, h3 {
     color: #fff;
-    text-shadow: 0.125rem 0.125rem 0.25rem rgba(0,0,0,0.5);
+    text-shadow: 0.125rem 0.125rem 0.25rem rgba(0,0,0,0.5); /* Shadow for readability */
 }
 
 p {
@@ -24,7 +26,10 @@ p {
     margin-bottom: 1rem;
 }
 
-/* Header */
+
+/* ===============================
+   HEADER
+   =============================== */
 header {
     background-color: #2E7D32;
     padding: 1rem;
@@ -40,7 +45,10 @@ header img {
     box-shadow: 0 0.25rem 0.5rem rgba(0,0,0,0.3);
 }
 
-/* Navigation */
+
+/* ===============================
+   NAVIGATION
+   =============================== */
 nav {
     margin-top: 1rem;
     position: relative;
@@ -61,9 +69,12 @@ nav a:hover {
     box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,0.3);
 }
 
-/* Hamburger Menu */
+
+/* ===============================
+   HAMBURGER MENU (for mobile)
+   =============================== */
 .nav-toggle {
-    display: none;
+    display: none; /* Hidden checkbox to toggle nav */
 }
 
 .hamburger {
@@ -82,19 +93,21 @@ nav a:hover {
     border-radius: 0.125rem;
 }
 
+/* Transform hamburger into X when active */
 .nav-toggle:checked ~ nav .hamburger span:nth-child(1) {
     transform: rotate(-45deg) translate(-0.3125rem, 0.375rem);
 }
-
 .nav-toggle:checked ~ nav .hamburger span:nth-child(2) {
     opacity: 0;
 }
-
 .nav-toggle:checked ~ nav .hamburger span:nth-child(3) {
     transform: rotate(45deg) translate(-0.3125rem, -0.375rem);
 }
 
-/* Main Content */
+
+/* ===============================
+   MAIN CONTENT
+   =============================== */
 main {
     max-width: 75rem;
     margin: 2rem auto;
@@ -124,7 +137,10 @@ main img {
     box-shadow: 0 0.25rem 0.5rem rgba(0,0,0,0.2);
 }
 
-/* Sections */
+
+/* ===============================
+   SECTIONS
+   =============================== */
 section {
     margin-bottom: 2rem;
 }
@@ -135,7 +151,10 @@ section h2 {
     margin-bottom: 1rem;
 }
 
-/* Forms */
+
+/* ===============================
+   FORMS
+   =============================== */
 form {
     background-color: #f9f9f9;
     padding: 2rem;
@@ -174,7 +193,10 @@ form button:hover {
     background-color: #45a049;
 }
 
-/* Products Grid */
+
+/* ===============================
+   PRODUCTS GRID
+   =============================== */
 .products-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(18.75rem, 1fr));
@@ -218,7 +240,10 @@ form button:hover {
     margin-bottom: 0.5rem;
 }
 
-/* Footer */
+
+/* ===============================
+   FOOTER
+   =============================== */
 footer {
     background-color: #2E7D32;
     color: #fff;
@@ -254,6 +279,7 @@ footer p:last-of-type {
     margin-top: 1rem;
 }
 
+/* Social Media Links */
 .social-media {
     display: flex;
     flex-direction: column;
@@ -275,22 +301,26 @@ footer p:last-of-type {
     text-decoration: underline;
 }
 
+/* Different colors for each platform */
 .social-media a[href*="facebook"] {
     color: #1877f2;
 }
-
 .social-media a[href*="whatsapp"] {
     color: #25d366;
 }
-
 .social-media a[href*="tiktok"] {
     color: #000;
 }
 
-/* Responsive Design */
+
+/* ===============================
+   RESPONSIVE DESIGN
+   =============================== */
+
+/* Small screens (max-width: 48rem ≈ 768px) */
 @media (max-width: 48rem) {
     .hamburger {
-        display: flex;
+        display: flex; /* Show hamburger menu */
     }
 
     nav a {
@@ -299,7 +329,7 @@ footer p:last-of-type {
     }
 
     .nav-toggle:checked ~ nav a {
-        display: block;
+        display: block; /* Show links when menu toggled */
     }
 
     main {
@@ -312,11 +342,12 @@ footer p:last-of-type {
     }
 }
 
-/* Special styles for contact page */
+/* Special background only for Contact page */
 body:has(.map-container) {
     background-color: rgba(79, 83, 201, 0.644);
 }
 
+/* Map container styling */
 .map-container {
     position: relative;
     padding-bottom: 75%;
@@ -337,7 +368,7 @@ body:has(.map-container) {
 }
 
 
-/* Small mobile: max-width 480px */
+/* Small mobile (max-width: 30rem ≈ 480px) */
 @media (max-width: 30rem) {
     header {
         padding: 0.5rem;
@@ -387,7 +418,7 @@ body:has(.map-container) {
     }
 }
 
-/* Medium mobile: max-width 576px */
+/* Medium mobile (max-width: 36rem ≈ 576px) */
 @media (max-width: 36rem) {
     h1, h2, h3 {
         font-size: 1.5rem;
@@ -411,7 +442,7 @@ body:has(.map-container) {
     }
 }
 
-/* Tablet: min-width 769px and max-width 992px */
+/* Tablet screens (769px - 992px) */
 @media (min-width: 48.0625rem) and (max-width: 62rem) {
     nav a {
         font-size: 1.1rem;
@@ -439,7 +470,7 @@ body:has(.map-container) {
     }
 }
 
-/* Small laptop: min-width 993px and max-width 1200px */
+/* Small laptops (993px - 1200px) */
 @media (min-width: 62.0625rem) and (max-width: 75rem) {
     main {
         max-width: 68.75rem;
@@ -459,7 +490,7 @@ body:has(.map-container) {
     }
 }
 
-/* Large laptop/desktop: min-width 1201px */
+/* Large laptops / Desktops (1201px and above) */
 @media (min-width: 75.0625rem) {
     main {
         max-width: 87.5rem;
