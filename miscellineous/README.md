@@ -87,6 +87,11 @@ Potential improvements for the project:
 - Add more product showcase pages
 - Include customer testimonials section
 
+## Responsive screenshots
+./assets/ mobile 320px
+./asssts/ Tablet 768px
+./assets/ Laptop 1440px
 ---
+
 
 *Last Updated: August 2025*
